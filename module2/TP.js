@@ -1,7 +1,6 @@
-function start() {
     document.getElementById("date").valueAsDate = new Date()
+    document.getElementById("btn").addEventListener("click", ajouter)
     document.getElementById("savoir").focus()
-}
 
 function ajouter() {
     let savoir = document.getElementById("savoir").value
