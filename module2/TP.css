@@ -1,0 +1,17 @@
+input {
+    width: 500px;
+}
+
+li {
+    cursor: pointer;
+}
+
+.savoir{
+    margin: 5px;
+    font-size: xx-large;
+}
+
+.infos {
+    font-size: x-small;
+    margin: 5px;
+}
