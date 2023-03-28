@@ -1,0 +1,22 @@
+<div>
+  <h1>Liaison unidirectionnelle</h1>
+  <h3>Liaison de données par interpolation</h3>
+  <p>{{title}}</p>
+
+  <h3>Liaison de données par propriété (Property Binding)</h3>
+  <input type="text" [value]="valeurInput" disabled style="width: 250px;">
+
+  <h3>Liaison de données par événements</h3>
+  <button (click)="onClickBouton()">Afficher une information sur la console</button>
+
+  <h1>Liaison bidirectionnelle</h1>
+  <div>
+    <input [(ngModel)]="zoneSaisie" style="width: 250px"/>
+  </div>
+  <div>
+    Affichage de la propriété zoneSaisie par interpolation
+  </div>
+  <div>
+    {{zoneSaisie}}
+  </div>
+</div>
