@@ -1,0 +1,8 @@
+<div style="text-align: left;">
+    <ul>
+        <li *ngFor="let info of informations">
+            <p>{{info.auteur}}</p>
+            <a routerLink="/detail/{{info.uuid}}">Détail</a>
+        </li>
+    </ul>
+</div>
