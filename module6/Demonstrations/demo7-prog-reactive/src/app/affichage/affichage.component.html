@@ -1,0 +1,7 @@
+<div>
+    <p>Zone d'affichage</p>
+    <p *ngIf="!datasSaisies || datasSaisies.length===0">Il n'y a aucune saisie pour le moment !</p>
+    <ul *ngIf="datasSaisies && datasSaisies.length>0">
+        <li *ngFor="let ds of datasSaisies">{{ds}}</li>
+    </ul>
+</div>
