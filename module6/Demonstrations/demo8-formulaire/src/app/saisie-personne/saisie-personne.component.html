@@ -1,0 +1,22 @@
+<div>
+    <h3>Le formulaire</h3>
+    <form [formGroup]="angularForm">
+        <div>
+            <label class="center-block">Nom :</label>
+            <input type="text" formControlName="nom" [ngClass]="{'form-control':true, 'is-invalid': nomInvalide()}">
+        </div>
+        <div>
+            <label class="center-block">Prénom :</label>
+            <input type="text" formControlName="prenom"
+                [ngClass]="{'form-control':true, 'is-invalid': prenomInvalide()}">
+        </div>
+        <div *ngIf="nomInvalide()" class="alert alert-danger">
+            Le nom est obligatoire
+        </div>
+        <div *ngIf="prenomInvalide()" class="alert alert-danger">
+            Le prénom est obligatoire et doit comporter au moins 5 caractères
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="problemeValidation()"
+            (click)="onEnregistrer()">Enregistrer</button>
+    </form>
+</div>
