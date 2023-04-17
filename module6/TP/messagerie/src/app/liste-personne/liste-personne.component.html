@@ -1,0 +1,14 @@
+<!-- Module06 - TP2 - Compléter pour gérer le formulaire -->
+<div class="p-2">
+
+    <h2>Personnes actives :</h2>
+  <div>
+    <div class="text-center pb-2" *ngIf="personnes.length > 0">
+      <a href="javascript:void(0)">Tous les messages</a>
+    </div>
+    <div *ngFor="let p of personnes" class="text-center pb-2">
+      <a href="javascript:void(0)" >{{p.pseudo}}</a>
+    </div>
+  </div>
+
+</div>
